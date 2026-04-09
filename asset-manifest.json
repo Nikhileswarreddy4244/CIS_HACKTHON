@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/CIS_HACKTHON/static/css/main.7dcbb624.css",
+    "main.js": "/CIS_HACKTHON/static/js/main.29e0e001.js",
+    "index.html": "/CIS_HACKTHON/index.html",
+    "main.7dcbb624.css.map": "/CIS_HACKTHON/static/css/main.7dcbb624.css.map",
+    "main.29e0e001.js.map": "/CIS_HACKTHON/static/js/main.29e0e001.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7dcbb624.css",
+    "static/js/main.29e0e001.js"
+  ]
+}
