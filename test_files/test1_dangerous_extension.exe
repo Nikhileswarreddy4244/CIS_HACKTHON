@@ -1,0 +1,3 @@
+This file has a .exe extension.
+It is not a real executable - just a text file used to test the security scanner.
+The scanner should block this based on the dangerous file extension (.exe).

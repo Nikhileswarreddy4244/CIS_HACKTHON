@@ -1,0 +1,4 @@
+This file contains an eval() call pattern.
+Example: eval(base64_decode("aGVsbG8gd29ybGQ="))
+The scanner should detect dynamic code evaluation and block it.
+This is a test file only - no real code runs here.

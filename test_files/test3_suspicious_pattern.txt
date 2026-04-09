@@ -1,0 +1,4 @@
+This is a harmless script pattern test file.
+It contains the text: powershell -enc aGVsbG8gd29ybGQ=
+The scanner should detect the encoded PowerShell pattern and block it.
+No actual PowerShell is executed - this is purely for testing the pattern scanner.

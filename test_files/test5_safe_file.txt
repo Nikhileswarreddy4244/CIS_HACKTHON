@@ -1,0 +1,9 @@
+Hello! This is a completely safe file.
+It contains normal text content with no dangerous patterns.
+This file should pass all security checks and upload successfully to FileVault.
+
+- No dangerous extension
+- No double extension
+- No magic byte mismatch  
+- No suspicious code patterns
+- Normal short filename

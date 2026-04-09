@@ -1,0 +1,29 @@
+.history-page { display: flex; flex-direction: column; gap: 2rem; }
+
+.page-header { padding: 1.5rem 0 0.5rem; }
+.page-title { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 800; }
+.page-subtitle { color: var(--text-secondary); margin-top: 0.4rem; font-size: 0.95rem; }
+
+.gradient-text {
+  background: linear-gradient(135deg, #c084fc, #7c3aed, #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.history-layout {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.versions-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.panel-title { font-size: 1rem; font-weight: 600; }
+
+@media (max-width: 900px) { .history-layout { grid-template-columns: 1fr; } }

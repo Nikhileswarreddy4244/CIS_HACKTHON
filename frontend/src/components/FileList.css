@@ -1,0 +1,75 @@
+.file-list { display: flex; flex-direction: column; gap: 1rem; }
+
+.file-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.file-list-title { font-size: 1.1rem; font-weight: 600; }
+
+.file-search {
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--bg-glass);
+  color: var(--text-primary);
+  font-family: var(--font);
+  font-size: 0.85rem;
+  outline: none;
+  transition: border-color var(--transition);
+  width: 220px;
+}
+.file-search:focus { border-color: var(--accent-light); }
+
+.file-items { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+
+.file-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--bg-glass);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+.file-item:hover { border-color: var(--accent); background: rgba(124,58,237,0.06); }
+.file-item.selected { border-color: var(--accent-light); background: rgba(124,58,237,0.1); }
+
+.file-item-icon { font-size: 1.5rem; flex-shrink: 0; }
+.file-item-info { flex: 1; min-width: 0; }
+.file-item-name { font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.file-item-meta { font-size: 0.75rem; color: var(--text-muted); margin-top: 2px; }
+.file-item-actions { display: flex; align-items: center; gap: 0.5rem; flex-shrink: 0; }
+.file-download-btn {
+  padding: 0.3rem 0.6rem;
+  font-size: 0.85rem;
+  background: rgba(124,58,237,0.12);
+  color: var(--accent-light);
+  border: 1px solid rgba(124,58,237,0.25);
+  transition: all var(--transition);
+}
+.file-download-btn:hover:not(:disabled) {
+  background: rgba(124,58,237,0.25);
+  transform: translateY(-1px);
+}
+.file-download-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.file-delete-btn { padding: 0.3rem 0.5rem; font-size: 0.85rem; }
+
+/* Skeleton */
+.file-list-skeleton { display: flex; flex-direction: column; gap: 0.5rem; }
+.skeleton-row {
+  height: 60px;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(90deg, var(--bg-card) 25%, var(--bg-glass) 50%, var(--bg-card) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite;
+}
+@keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+
+/* Empty */
+.empty-state { text-align: center; padding: 3rem 1rem; color: var(--text-muted); }
+.empty-icon { font-size: 3rem; display: block; margin-bottom: 0.75rem; opacity: 0.5; }
